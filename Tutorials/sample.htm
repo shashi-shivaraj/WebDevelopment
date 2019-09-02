@@ -4,6 +4,7 @@
 <head>
 <title>Quotes</title>
 <link href="style.css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>	
@@ -15,8 +16,16 @@
 
 <div id="quotes">
 <ol>
-<li> <a href=https://en.wikipedia.org/wiki/The_Shawshank_Redemption>"Hope is a good thing, maybe the best of things, and no good thing ever dies."</li>
-<li>"Salvation lies within."</a></li>
+<li> 
+    <!--
+        a href=https://en.wikipedia.org/wiki/The_Shawshank_Redemption>
+    -->
+    "Hope is a good thing, maybe the best of things, and no good thing ever dies."</li>
+<li>"Salvation lies within."
+<!--
+</a>
+-->
+</li>
 <li>"Those who cannot remember the past are condemned to repeat it."
 <li>"History has proven repeatedly that lunatics will rise to power again and again on tidal wave of aggressive nationalism and intolerance, even in places where it seems utterly incomprehensible."
 </li>
@@ -95,16 +104,27 @@
 </ol>
 </div>
 
-<h3 style="color:black">User login</h3>
-<input id="username"placeholder="username"/></input><br>
+<h3 style="color:black">Comments</h3>
+<form action="/comments" method="POST">
+<input type="text" name="ip_name" id="name"placeholder="Name"/><br>
+<!--
 <input id="password"placeholder="password"/></input><br><br>
+-->
+<textarea name="ip_cmt" id="comment" rows=4 cols=75 placeholder="Share your favourite quote"/></textarea><br><br>
 <button id="submit">Submit</button>
+</form>
+
+<section id ="usercomments">
+    <h2>Recent Comments :</h2>
+</section>
 
 <script src="sample.js"></script>
+
 </body>
 <br>
 
 <footer>
+<br>
 Developed by Shashi Shivaraju	
 </footer>
 
