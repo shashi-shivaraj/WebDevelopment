@@ -1,0 +1,10 @@
+This Web Application which displays a collection of quotes. 
+It is developed using HTML, CSS, Java Script, Node Js Express framework
+and SQLite.
+
+To host the website on your local machine:
+1)Using a terminal run the server using:
+    cd WebDevelopment/Tutorials/server;
+    node server
+
+2)Using a web broser,open http://localhost:3000/sample.htm
